@@ -18,6 +18,8 @@ public class Server {
                 PrintWriter toClient = new PrintWriter(acceptedConnection.getOutputStream());
                 BufferedReader fromClient = new BufferedReader(
                         new InputStreamReader(acceptedConnection.getInputStream()));
+                toClient.println("Hello from the server");
+
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
@@ -25,7 +27,12 @@ public class Server {
     }
 
     public static void main(String[] args) {
-
+        Server server = new Server();
+        try {
+            server.run();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
 }
