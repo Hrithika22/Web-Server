@@ -1,15 +1,15 @@
-# Multi-Threaded Webserver
+## Multi-Threaded Webserver
 
 This Java project shows the behavior of multi-threaded and single-threaded client-server architectures. 
 It is an implementation to understand the differences of each in handling client requests and server operations.
 
-## client and server
+### client and server
 
 client :computer: : A client is a program that runs on the local machine requesting service from the server. 
 
 server :desktop_computer: : A server is a program that runs on the remote machine and provides services to the client.  Sever runs infinitely and waits for the request from the client. Upon receiving the request, it responds to the request of client.
 
-## Thread :thread:
+### Thread :thread:
 A thread is a smallest unit of execution within a process. Threads make concurrent execution of multiple tasks within a single process. It allows for better utilization of CPU resources and improved responsiveness in applications.
 
 ### single-threading vs Multi-threading 
